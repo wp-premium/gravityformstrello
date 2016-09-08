@@ -44,6 +44,24 @@ class GFTrello extends GFFeedAddOn {
 	}
 
 	/**
+	 * Plugin starting point. Adds PayPal delayed payment support.
+	 *
+	 * @access public
+	 * @return void
+	 */
+	public function init() {
+
+		parent::init();
+
+		$this->add_delayed_payment_support(
+			array(
+				'option_label' => esc_html__( 'Create Trello card only when payment is received.', 'gravityformstrello' )
+			)
+		);
+
+	}
+
+	/**
 	 * Enqueue admin scripts.
 	 * 
 	 * @access public
@@ -668,12 +686,16 @@ class GFTrello extends GFFeedAddOn {
 		if ( rgars( $feed, 'meta/cardDueDate' ) == 'gf_custom' && rgars( $feed, 'meta/cardDueDate_custom' ) ) {
 			$card['due'] = date( 'Y-m-d\TH:i:s', strtotime( 'midnight +' . $feed['meta']['cardDueDate_custom'] . ' days' ) ) . $this->get_timezone_for_due_date();
 		} else if ( rgars( $feed, 'meta/cardDueDate' ) && rgars( $feed, 'meta/cardDueDate' ) != 'gf_custom' ) {
-			$card['due']  = date( 'Y-m-d\TH:i:s', strtotime( $this->get_field_value( $form, $entry, $feed['meta']['cardDueDate'] ) ) ) . $this->get_timezone_for_due_date();
+			$date = $this->get_field_value( $form, $entry, $feed['meta']['cardDueDate'] );
+			if ( $date ) {
+				$card['due'] = date( 'Y-m-d\TH:i:s', strtotime( $date ) ) . $this->get_timezone_for_due_date();
+			}
 		}
 
 		/* Filter card. */
 		$card = gf_apply_filters( 'gform_trello_card', array( $form['id'] ), $card, $feed, $entry, $form );
-		
+		$this->log_debug( __METHOD__ . '(): Card to be created => ' . print_r( $card, 1 ) );
+
 		/* Check for card name. */
 		if ( rgblank( $card['name'] ) ) {
 			$this->add_feed_error( esc_html__( 'Card could not be created because no name was provided.', 'gravityformstrello' ), $feed, $entry, $form );
