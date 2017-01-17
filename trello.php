@@ -4,7 +4,7 @@
 Plugin Name: Gravity Forms Trello Add-On
 Plugin URI: http://www.gravityforms.com
 Description: Integrates Gravity Forms with Trello
-Version: 1.1
+Version: 1.2
 Author: rocketgenius
 Author URI: http://www.rocketgenius.com
 Text Domain: gravityformstrello
@@ -28,7 +28,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
-define( 'GF_TRELLO_VERSION', '1.1' );
+define( 'GF_TRELLO_VERSION', '1.2' );
 
 add_action( 'gform_loaded', array( 'GF_Trello_Bootstrap', 'load' ), 5 );
 
