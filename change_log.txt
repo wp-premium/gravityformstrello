@@ -1,4 +1,8 @@
 -----------------------------------------------------------
+1.2
+    - Fixed fatal error which could occur if no boards are returned when initializing the API.
+
+-----------------------------------------------------------
 1.1
     - Added support for delaying feed processing until payment by PayPal Standard is successfully completed.
     - Fixed an issue where a due date of Jan 1, 1970 was set on the card if the mapped date field was empty.

@@ -796,7 +796,7 @@ class GFTrello extends GFFeedAddOn {
 		if ( $boards === false ) {
 			
 			/* Log that test failed. */
-			$this->log_error( __METHOD__ . '(): API credentials are invalid; '. $e->getMessage() );			
+			$this->log_error( __METHOD__ . '(): API credentials are invalid.' );
 
 			return false;			
 			
