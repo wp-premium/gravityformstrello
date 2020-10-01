@@ -1,12 +1,24 @@
------------------------------------------------------------
-1.2
-    - Fixed fatal error which could occur if no boards are returned when initializing the API.
+### 1.4 | 2020-09-09
+- Added support for Gravity Forms 2.5.
 
------------------------------------------------------------
-1.1
-    - Added support for delaying feed processing until payment by PayPal Standard is successfully completed.
-    - Fixed an issue where a due date of Jan 1, 1970 was set on the card if the mapped date field was empty.
 
------------------------------------------------------------
-1.0
-	- It's all new!
+### 1.3 | 2020-05-05
+- Added security enhancements.
+- Added translations for Hebrew, Hindi, Japanese, and Turkish.
+- Updated Javascript files, stylesheets to use minified versions.
+- Updated labels to be stored by ID instead of by color.
+- Fixed error message for when a file cannot be attached to a card.
+- Fixed issue of wrong variable being used in upgrade function.
+
+
+### 1.2
+- Fixed fatal error which could occur if no boards are returned when initializing the API.
+
+
+### 1.1
+- Added support for delaying feed processing until payment by PayPal Standard is successfully completed.
+- Fixed an issue where a due date of Jan 1, 1970 was set on the card if the mapped date field was empty.
+
+
+### 1.0
+- It's all new!
