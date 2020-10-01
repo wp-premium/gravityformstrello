@@ -1,160 +1,162 @@
-# Copyright 2009-2017 Rocketgenius, Inc.
+# Copyright (C) 2020 Gravity Forms
+# This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Forms Trello Add-On 1.2\n"
-"Report-Msgid-Bugs-To: http://www.gravtiyhelp.com\n"
-"POT-Creation-Date: 2017-01-05 19:26:21+00:00\n"
+"Project-Id-Version: Gravity Forms Trello Add-On 1.4\n"
+"Report-Msgid-Bugs-To: https://gravityforms.com/support\n"
+"Last-Translator: Gravity Forms <support@gravityforms.com>\n"
+"Language-Team: Gravity Forms <support@gravityforms.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Rocketgenius <customerservice@rocketgenius.com>\n"
-"Language-Team: Rocketgenius <customerservice@rocketgenius.com>\n"
-"X-Generator: Gravity Forms Build Server\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Project-Id-Version: gravityformstrello\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Textdomain-Support: yes\n"
+"POT-Creation-Date: 2020-09-09T17:46:37+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: gravityformstrello\n"
 
-#: class-gf-trello.php:58
-msgid "Create Trello card only when payment is received."
-msgstr ""
-
-#: class-gf-trello.php:114
-msgid "Authorize with Trello"
-msgstr ""
-
-#: class-gf-trello.php:140
-msgid "Click here to generate an authentication token."
-msgstr ""
-
-#: class-gf-trello.php:145
-msgid "Trello has been authenticated with your account."
-msgstr ""
-
-#: class-gf-trello.php:149
-msgid "De-Authorize Trello"
-msgstr ""
-
-#: class-gf-trello.php:176
-msgid "Feed Name"
-msgstr ""
-
-#: class-gf-trello.php:181 class-gf-trello.php:217 class-gf-trello.php:563
-msgid "Name"
-msgstr ""
-
-#: class-gf-trello.php:181
-msgid "Enter a feed name to uniquely identify this setup."
-msgstr ""
-
-#: class-gf-trello.php:185 class-gf-trello.php:564
-msgid "Trello Board"
-msgstr ""
-
-#: class-gf-trello.php:193 class-gf-trello.php:565
-msgid "Trello List"
-msgstr ""
-
-#: class-gf-trello.php:209
-msgid "Card Settings"
-msgstr ""
-
-#: class-gf-trello.php:225
-msgid "Description"
-msgstr ""
-
-#: class-gf-trello.php:230
-msgid "Due Date"
-msgstr ""
-
-#: class-gf-trello.php:231
-msgid "days after today"
-msgstr ""
-
-#: class-gf-trello.php:237
-msgid "Labels"
-msgstr ""
-
-#: class-gf-trello.php:243
-msgid "Members"
-msgstr ""
-
-#: class-gf-trello.php:256
-msgid "Attachments"
-msgstr ""
-
-#: class-gf-trello.php:264
-msgid "Feed Conditional Logic"
-msgstr ""
-
-#: class-gf-trello.php:270 class-gf-trello.php:273
-msgid "Conditional Logic"
-msgstr ""
-
-#: class-gf-trello.php:271
-msgid "Enable"
-msgstr ""
-
-#: class-gf-trello.php:272
-msgid "Export to Trello if"
-msgstr ""
-
-#: class-gf-trello.php:273
-msgid ""
-"When conditional logic is enabled, form submissions will only be exported "
-"to Trello when the condition is met. When disabled, all form submissions "
-"will be posted."
-msgstr ""
-
-#: class-gf-trello.php:294
-msgid "Select a Trello Board"
-msgstr ""
-
-#: class-gf-trello.php:337
-msgid "Select a Trello List"
-msgstr ""
-
-#: class-gf-trello.php:645
-msgid "Card was not created because API could not be initialized."
-msgstr ""
-
-#: class-gf-trello.php:701
-msgid "Card could not be created because no name was provided."
-msgstr ""
-
-#: class-gf-trello.php:711
-msgid "Card could not be created."
-msgstr ""
-
-#: class-gf-trello.php:741
-msgid "Card could not add attachment to card. %s"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 msgid "Gravity Forms Trello Add-On"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "http://www.gravityforms.com"
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://gravityforms.com"
 msgstr ""
 
-#. Description of the plugin/theme
+#. Description of the plugin
 msgid "Integrates Gravity Forms with Trello"
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "rocketgenius"
+#. Author of the plugin
+msgid "Gravity Forms"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://www.rocketgenius.com"
+#: class-gf-trello.php:197
+msgid "Create Trello card only when payment is received."
+msgstr ""
+
+#: class-gf-trello.php:276
+msgid "Authorize with Trello"
+msgstr ""
+
+#: class-gf-trello.php:331
+msgid "Click here to generate an authentication token."
+msgstr ""
+
+#: class-gf-trello.php:336
+msgid "Trello has been authenticated with your account."
+msgstr ""
+
+#: class-gf-trello.php:340
+msgid "De-Authorize Trello"
+msgstr ""
+
+#: class-gf-trello.php:384
+msgid "Feed Name"
+msgstr ""
+
+#: class-gf-trello.php:391
+#: class-gf-trello.php:425
+#: class-gf-trello.php:899
+msgid "Name"
+msgstr ""
+
+#: class-gf-trello.php:392
+msgid "Enter a feed name to uniquely identify this setup."
+msgstr ""
+
+#: class-gf-trello.php:397
+#: class-gf-trello.php:900
+msgid "Trello Board"
+msgstr ""
+
+#: class-gf-trello.php:402
+msgid "You must have at least one Trello board in your account."
+msgstr ""
+
+#: class-gf-trello.php:406
+#: class-gf-trello.php:901
+msgid "Trello List"
+msgstr ""
+
+#: class-gf-trello.php:412
+msgid "You must select a Trello board containing lists."
+msgstr ""
+
+#: class-gf-trello.php:417
+msgid "Card Settings"
+msgstr ""
+
+#: class-gf-trello.php:433
+msgid "Description"
+msgstr ""
+
+#: class-gf-trello.php:438
+msgid "Due Date"
+msgstr ""
+
+#: class-gf-trello.php:439
+msgid "days after today"
+msgstr ""
+
+#: class-gf-trello.php:446
+msgid "Labels"
+msgstr ""
+
+#: class-gf-trello.php:452
+msgid "Members"
+msgstr ""
+
+#: class-gf-trello.php:458
+msgid "Feed Conditional Logic"
+msgstr ""
+
+#: class-gf-trello.php:464
+#: class-gf-trello.php:469
+msgid "Conditional Logic"
+msgstr ""
+
+#: class-gf-trello.php:465
+msgid "Enable"
+msgstr ""
+
+#: class-gf-trello.php:466
+msgid "Export to Trello if"
+msgstr ""
+
+#: class-gf-trello.php:470
+msgid "When conditional logic is enabled, form submissions will only be exported to Trello when the condition is met. When disabled, all form submissions will be posted."
+msgstr ""
+
+#: class-gf-trello.php:487
+msgid "Attachments"
+msgstr ""
+
+#: class-gf-trello.php:548
+msgid "Select a Board"
+msgstr ""
+
+#: class-gf-trello.php:618
+msgid "Select a List"
+msgstr ""
+
+#: class-gf-trello.php:1002
+msgid "Card was not created because API could not be initialized."
+msgstr ""
+
+#: class-gf-trello.php:1072
+msgid "Card could not be created because no name was provided."
+msgstr ""
+
+#: class-gf-trello.php:1089
+#: class-gf-trello.php:1098
+msgid "Card could not be created."
+msgstr ""
+
+#: class-gf-trello.php:1123
+msgid "Label could not be added to card."
+msgstr ""
+
+#: class-gf-trello.php:1165
+msgid "File \"%s\" could not be attached to card. %s"
 msgstr ""

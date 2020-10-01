@@ -1,0 +1,9 @@
+{
+    "name": "wp-premium/gravityformstrello",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "classmap": [
+            "."
+        ]
+    }
+}

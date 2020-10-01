@@ -47,7 +47,7 @@
 
 		function changeAuthToken( token ) {
 			$( 'input#authToken' ).val( token );
-			$( '#gform-settings #gform-settings-save' ).trigger( 'click' );
+			$( '#gform-settings-save' ).trigger( 'click' );
 		}
 		
 	} );
